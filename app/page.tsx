@@ -2,6 +2,8 @@ import Image from "next/image";
 import About from "./components/About";
 import Presentation from "./components/Presentation";
 import Offer from "./components/Offer";
+import Objectives from "./components/Objectives";
+import Befenit from "./components/Befenit";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <About />
       <Presentation />
       <Offer />
+      <Objectives />
+      <Befenit />
     </div>
   );
 }

@@ -1,13 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import chris from "../../public/Christiant Kagheni.png";
+import { MdEngineering } from "react-icons/md";
+import { FaCircleRight } from "react-icons/fa6";
 
 const Presentation = () => {
   return (
     <div className="w-[70vw] mx-auto grid grid-cols-2 py-32">
       <div className="w-72 h-72 bg-red-700 my-auto"></div>
       <div className="flex flex-col gap-6">
-        <h2 className="text-red-700 text-2xl">WHO WE ARE</h2>
+        <h2 className="text-red-700 text-2xl flex gap-1 items-center">
+          <MdEngineering />
+          WHO WE ARE
+        </h2>
         <p className="text-5xl font-bold">
           Providing High Quality Electrical Solution
         </p>
@@ -36,11 +41,18 @@ const Presentation = () => {
           </div>
           <div>
             <ul>
-              <li className="text-slate-700">Our solution are tested</li>
-              <li className="text-slate-700">
+              <li className="text-slate-700 flex gap-1 items-center">
+                <FaCircleRight />
+                Our solution are tested
+              </li>
+              <li className="text-slate-700 flex gap-1 items-center">
+                <FaCircleRight />
                 Leverage Experience in shipping
               </li>
-              <li className="text-slate-700">Proven, and best-in class</li>
+              <li className="text-slate-700 flex gap-1 items-center">
+                <FaCircleRight />
+                Proven, and best-in class
+              </li>
             </ul>
           </div>
         </div>
