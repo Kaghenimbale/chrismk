@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { BsArrowRightCircleFill } from "react-icons/bs";
 import { MdEngineering } from "react-icons/md";
 
 const Befenit = () => {
@@ -22,17 +22,17 @@ const Befenit = () => {
 
         <div className="flex flex-col gap-4">
           <div className="flex gap-4 items-center">
-            <FaArrowCircleRight className="text-red-600" />
+            <BsArrowRightCircleFill className="text-red-600" />
             <p>Our main goal is simply works for the customers.</p>
           </div>
 
           <div className="flex gap-4 items-center">
-            <FaArrowCircleRight className="text-red-600" />
+            <BsArrowRightCircleFill className="text-red-600" />
             <p>Strategies to ensure proactive services.</p>
           </div>
 
           <div className="flex gap-4 items-center">
-            <FaArrowCircleRight className="text-red-600" />
+            <BsArrowRightCircleFill className="text-red-600" />
             <p>Professional worldwide methodologies.</p>
           </div>
         </div>
