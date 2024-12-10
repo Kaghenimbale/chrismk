@@ -1,6 +1,8 @@
+import Image from "next/image";
 import React from "react";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { MdEngineering } from "react-icons/md";
+import image2 from "../../public/worker-red-uniform-operating-control-panel-industrial-machine-night_753333-6558.jpg";
 
 const Befenit = () => {
   return (
@@ -37,7 +39,11 @@ const Befenit = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <div>
+          <Image src={image2} alt="image" />
+        </div>
+      </div>
     </div>
   );
 };

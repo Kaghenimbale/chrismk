@@ -4,6 +4,7 @@ import Presentation from "./components/Presentation";
 import Offer from "./components/Offer";
 import Objectives from "./components/Objectives";
 import Befenit from "./components/Befenit";
+import Work from "./components/Work";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Offer />
       <Objectives />
       <Befenit />
+      <Work />
     </div>
   );
 }
