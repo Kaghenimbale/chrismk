@@ -5,6 +5,8 @@ import Offer from "./components/Offer";
 import Objectives from "./components/Objectives";
 import Befenit from "./components/Befenit";
 import Work from "./components/Work";
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Objectives />
       <Befenit />
       <Work />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }
