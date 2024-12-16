@@ -1,4 +1,3 @@
-import Image from "next/image";
 import About from "./components/About";
 import Presentation from "./components/Presentation";
 import Offer from "./components/Offer";
@@ -7,6 +6,8 @@ import Befenit from "./components/Befenit";
 import Work from "./components/Work";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Testimonial from "./components/Testimonial";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Work />
       <Portfolio />
       <Contact />
+      <Testimonial />
+      <Footer />
     </div>
   );
 }

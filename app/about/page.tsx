@@ -1,7 +1,9 @@
 import React from "react";
 
 const page = () => {
-  return <div>Welcome to About page.</div>;
+  return (
+    <div className="mt-[5rem] w-[70vw] mx-auto">Welcome to About page.</div>
+  );
 };
 
 export default page;

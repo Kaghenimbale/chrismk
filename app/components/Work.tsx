@@ -16,7 +16,7 @@ const Work = () => {
         </p>
 
         <div className="w-[50vw] text-white flex justify-between">
-          <div className="bg-slate-900 w-[250px] flex flex-col text-center p-4 items-center gap-10 rounded-full">
+          <div className="bg-slate-900 w-[200px] flex flex-col text-center p-4 items-center gap-10 rounded-full">
             <GiScrewdriver className="text-6xl" />
             <div className="flex flex-col gap-4">
               <h2 className="font-bold">Request Quote</h2>
@@ -30,7 +30,7 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="bg-slate-900 w-[250px] flex flex-col text-center p-4 items-center gap-10 rounded-full">
+          <div className="bg-slate-900 w-[200px] flex flex-col text-center p-4 items-center gap-10 rounded-full">
             <IoHammerOutline className="text-6xl" />
             <div className="flex flex-col gap-4">
               <h2 className="font-bold">Request Quote</h2>
@@ -44,7 +44,7 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="bg-slate-900 w-[250px] flex flex-col text-center p-4 items-center gap-10 rounded-full">
+          <div className="bg-slate-900 w-[200px] flex flex-col text-center p-4 items-center gap-10 rounded-full">
             <MdElectricMeter className="text-6xl" />
             <div className="flex flex-col gap-4">
               <h2 className="font-bold">Request Quote</h2>
