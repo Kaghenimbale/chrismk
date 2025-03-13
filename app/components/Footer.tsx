@@ -15,10 +15,10 @@ const Footer = () => {
               occasionally circumstances.
             </p>
             <div className="flex gap-4">
-              <FaInstagram className="text-white" />
-              <FaTwitter className="text-white" />
-              <FaFacebook className="text-white" />
-              <FaLinkedin className="text-white" />
+              <FaInstagram className="text-white hover:text-red-600 hover:cursor-pointer" />
+              <FaTwitter className="text-white hover:text-red-600 hover:cursor-pointer" />
+              <FaFacebook className="text-white hover:text-red-600 hover:cursor-pointer" />
+              <FaLinkedin className="text-white hover:text-red-600 hover:cursor-pointer" />
             </div>
           </div>
 
@@ -27,11 +27,21 @@ const Footer = () => {
             <div className="w-[200px] h-[1px] bg-gray-300">
               <div className="w-[70px] h-[2px] bg-red-600"></div>
             </div>
-            <p className="text-gray-400">About the Company</p>
-            <p className="text-gray-400">Meet the Team</p>
-            <p className="text-gray-400">News & Media</p>
-            <p className="text-gray-400">Our Projects</p>
-            <p className="text-gray-400">Contact</p>
+            <a href="#" className="text-gray-400 hover:underline">
+              About the Company
+            </a>
+            <a href="#" className="text-gray-400 hover:underline">
+              Meet the Team
+            </a>
+            <a href="#" className="text-gray-400 hover:underline">
+              News & Media
+            </a>
+            <a href="#" className="text-gray-400 hover:underline">
+              Our Projects
+            </a>
+            <a href="#" className="text-gray-400 hover:underline">
+              Contact
+            </a>
           </div>
 
           <div className="flex flex-col gap-4">

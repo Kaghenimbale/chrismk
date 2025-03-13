@@ -62,7 +62,7 @@ const Testimonial = () => {
                 Build and implement innovative, profitable and sustainable
                 products and services that help.
               </p>
-              <h3 className="font-bold">Mark Wooden</h3>
+              <h3 className="font-bold">Chris kroos</h3>
               <span className="text-red-600">Admin</span>
             </div>
           </div>
