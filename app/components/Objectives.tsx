@@ -8,16 +8,16 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Objectives = () => {
   return (
-    <div className="w-[70vw] mx-auto p-10 grid grid-cols-2">
+    <div className="w-full lg:w-[70vw] mx-auto p-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
       <div className="flex flex-col gap-8">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
           WHY CHOOSE US
         </h2>
-        <p className="text-4xl font-bold w-[40rem]">
+        <p className="text-4xl font-bold lg:w-[40rem]">
           Providing quality Your electric services to all.
         </p>
-        <div className="flex gap-10">
+        <div className="flex flex-col lg:flex-row gap-10">
           <div className="border-gray-300 border-2 w-fit p-4">
             <span className="text-8xl font-extrabold">20</span>
             <p className="text-wrap w-[4rem]">Years of experience</p>

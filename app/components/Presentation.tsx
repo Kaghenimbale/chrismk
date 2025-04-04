@@ -6,14 +6,14 @@ import { FaCircleRight } from "react-icons/fa6";
 
 const Presentation = () => {
   return (
-    <div className="w-[70vw] mx-auto grid grid-cols-2 py-32">
+    <div className="w-full lg:w-[70vw] mx-auto grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-2 px-10 py-32">
       <div className="w-72 h-72 bg-red-700 my-auto"></div>
       <div className="flex flex-col gap-6">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
           WHO WE ARE
         </h2>
-        <p className="text-5xl font-bold">
+        <p className="text-4xl lg:text-5xl font-bold">
           Providing High Quality Electrical Solution
         </p>
         <p className="text-red-700 text-2xl">
@@ -27,7 +27,7 @@ const Presentation = () => {
           tailored for specific market.
         </span>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           <div className="flex gap-4 items-center">
             <Image
               className="rounded-full w-[60px] h-[70px]"

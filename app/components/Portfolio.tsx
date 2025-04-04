@@ -7,16 +7,16 @@ import Engineer3 from "../../public/OTC-Electricity-1020x615-1.jpg";
 const Portfolio = () => {
   return (
     <div className="w-full">
-      <div className="w-[70vw] mx-auto flex flex-col items-center py-10 gap-4">
+      <div className="w-full lg:w-[70vw] mx-auto flex flex-col items-center py-10 gap-4">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
           OUR PORTFOLIO
         </h2>
-        <p className="text-5xl font-bold w-[50rem] text-center">
+        <p className="text-4xl lg:text-5xl font-bold lg:w-[50rem] text-center">
           We delivered results for industry leaders
         </p>
 
-        <div className="flex gap-6">
+        <div className="flex gap-6 flex-col lg:flex-row">
           <Image
             src={Engineer1}
             className="w-[20rem] object-cover"

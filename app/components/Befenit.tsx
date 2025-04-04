@@ -6,18 +6,18 @@ import image2 from "../../public/worker-red-uniform-operating-control-panel-indu
 
 const Befenit = () => {
   return (
-    <div className="w-[70vw] mx-auto p-10 grid grid-cols-2">
+    <div className="w-full lg:w-[70vw] mx-auto p-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
       <div className="flex flex-col gap-8">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
           OUR BENEFITIES
         </h2>
 
-        <h2 className="text-4xl font-bold w-[25rem]">
+        <h2 className="text-4xl font-bold lg:w-[25rem]">
           Why You should Choose us
         </h2>
 
-        <p className="w-[25rem]">
+        <p className="lg:w-[25rem]">
           with over four decades of experience providing solutions to
           large-scale enterprises throughout the globe, we offer end-to-end.
         </p>

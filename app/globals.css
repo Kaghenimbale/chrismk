@@ -11,13 +11,10 @@
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
 a:hover {
   text-decoration: underline;
-}
-
-.about {
-  background-image: url(../public/1_Ntcxw4Uyx5m8SaJmS0OJrg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  cursor: pointer;
 }

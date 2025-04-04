@@ -7,11 +7,10 @@ import Work from "./components/Work";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Testimonial from "./components/Testimonial";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col mt-[4.5rem]">
+    <div className="flex flex-col mt-[4.5rem] w-fit lg:w-[100%]">
       <About />
       <Presentation />
       <Offer />
@@ -21,7 +20,6 @@ export default function Home() {
       <Portfolio />
       <Contact />
       <Testimonial />
-      {/* <Footer /> */}
     </div>
   );
 }

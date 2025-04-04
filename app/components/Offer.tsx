@@ -6,23 +6,23 @@ import img3 from "../../public/electrical-engineer_762625-3025.avif";
 import { TbNetwork } from "react-icons/tb";
 import { FaRegLightbulb } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
-import { TbAirConditioning } from "react-icons/tb";
+// import { TbAirConditioning } from "react-icons/tb";
 import { FaPlay } from "react-icons/fa";
 import Image from "next/image";
 
 const Offer = () => {
   return (
-    <div className="w-[70vw] bg-slate-950 mx-auto flex flex-col items-center gap-4 py-10">
+    <div className="w-full lg:w-[70vw] bg-slate-950 mx-auto flex flex-col items-center gap-4 lg:py-10">
       <div className="flex flex-col items-center gap-4">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
           WHO WE ARE
         </h2>
-        <p className="text-5xl font-bold w-[50rem] text-center text-white">
+        <p className="text-4xl lg:text-5xl font-bold lg:w-[50rem] text-center text-white">
           We Offer Cost Efficient Electrical Services
         </p>
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 flex-col lg:flex-row">
           <div>
             <Image
               src={img1}
@@ -61,7 +61,7 @@ const Offer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-red-600 w-full grid grid-cols-2 p-40">
+      <div className="bg-red-600 w-full grid grid-cols-1 p-4 gap-4 lg:gap-0 lg:p-40 lg:grid-cols-2">
         <p className="text-3xl font-bold w-[20rem] text-white border-l-8 border-white pl-5">
           We are Providing Best Quality Electrician and Electrical Services to
           All.

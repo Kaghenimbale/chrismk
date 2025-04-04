@@ -6,18 +6,18 @@ import image2 from "../../public/a-man-with-a-white-helmet-and-glasses-is-smilin
 
 const Testimonial = () => {
   return (
-    <div className="py-10">
-      <div className="w-[70vw] mx-auto flex flex-col items-center gap-4">
+    <div className="p-10">
+      <div className="w-full lg:w-[70vw] mx-auto flex flex-col items-center gap-4">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
           TESTIMONIALS
         </h2>
-        <p className="text-5xl font-bold w-[30rem] text-center">
+        <p className="text-4xl lg:text-5xl font-bold lg:w-[30rem] text-center">
           What Our Client Say about us
         </p>
 
-        <div className="flex gap-6">
-          <div className="flex gap-4">
+        <div className="flex gap-6 flex-col lg:flex-row">
+          <div className="flex flex-col lg:flex-row gap-4">
             <Image
               src={image1}
               className="w-[160px] h-[200px] object-cover"
@@ -38,11 +38,11 @@ const Testimonial = () => {
                 products and services that help.
               </p>
               <h3 className="font-bold">Mark Wooden</h3>
-              <span className="text-red-600">Admin</span>
+              <span className="text-red-600 font-bold">Admin</span>
             </div>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col lg:flex-row gap-4">
             <Image
               src={image2}
               className="w-[160px] h-[200px] object-cover"
@@ -63,7 +63,7 @@ const Testimonial = () => {
                 products and services that help.
               </p>
               <h3 className="font-bold">Chris kroos</h3>
-              <span className="text-red-600">Admin</span>
+              <span className="text-red-600 font-bold">Admin</span>
             </div>
           </div>
         </div>

@@ -7,10 +7,10 @@ import { FaAngleRight } from "react-icons/fa";
 const page = () => {
   return (
     <div className="mt-[5rem] w-[70vw] mx-auto py-10 ">
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="flex flex-col gap-16">
           <h2 className="text-4xl font-bold flex">Contact Us</h2>
-          <div className="flex flex-col gap-8 w-[30rem]">
+          <div className="flex flex-col gap-8 lg:w-[30rem]">
             <p className="text-gray-500">
               Satisfying you is all that we long for, that is why we put you
               first in all that we do. Our contact details are always ready to
@@ -23,7 +23,7 @@ const page = () => {
             </p>
           </div>
 
-          <div className="flex justify-between w-[40rem]">
+          <div className="flex flex-col lg:flex-row gap-4 justify-between lg:w-[40rem]">
             <div className="flex flex-col gap-2">
               <FaLocationDot className="text-4xl border border-gray-500 w-[60px] h-[60px] p-2 rounded-lg text-gray-500" />
               <div>

@@ -1,33 +1,49 @@
+"use client";
+
 import React from "react";
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { MdMail, MdPhone } from "react-icons/md";
 
 const Footer = () => {
+  const date = Date().slice(11, 15);
   return (
-    <div className="pt-10 bg-slate-950 text-white">
-      <div className="w-[70vw] mx-auto flex flex-col gap-4">
-        <div className="grid grid-cols-4 gap-4">
+    <div className="w-full px-10 pt-10 bg-slate-950 text-white">
+      <div className="w-full lg:w-[70vw] mx-auto flex flex-col gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <div className="flex flex-col gap-4">
-            <h3 className="text-2xl font-bold">About Us</h3>
+            <a href="/contact" className="text-2xl font-bold">
+              About Us
+            </a>
             <p className="text-gray-400">
               Desires to obtain pain of itself, because it is pain, but
               occasionally circumstances.
             </p>
             <div className="flex gap-4">
-              <FaInstagram className="text-white hover:text-red-600 hover:cursor-pointer" />
-              <FaTwitter className="text-white hover:text-red-600 hover:cursor-pointer" />
-              <FaFacebook className="text-white hover:text-red-600 hover:cursor-pointer" />
-              <FaLinkedin className="text-white hover:text-red-600 hover:cursor-pointer" />
+              <a href="http://" target="_blank">
+                <FaInstagram className="text-white hover:text-red-600 hover:cursor-pointer" />
+              </a>
+              <a href="http://" target="_blank">
+                <FaTwitter className="text-white hover:text-red-600 hover:cursor-pointer" />
+              </a>
+              <a href="http://" target="_blank">
+                <FaFacebook className="text-white hover:text-red-600 hover:cursor-pointer" />
+              </a>
+              <a href="http://" target="_blank">
+                <FaLinkedin className="text-white hover:text-red-600 hover:cursor-pointer" />
+              </a>
+              <a href="https://wa.link/iz116d" target="_blank">
+                <FaWhatsapp className="text-white hover:text-red-600 hover:cursor-pointer" />
+              </a>
             </div>
           </div>
 
           <div className="flex flex-col gap-4">
             <h3 className="font-bold">Explore</h3>
-            <div className="w-[200px] h-[1px] bg-gray-300">
-              <div className="w-[70px] h-[2px] bg-red-600"></div>
+            <div className="lg:w-[200px] h-[1px] bg-gray-300">
+              <div className="lg:w-[70px] h-[2px] bg-red-600"></div>
             </div>
-            <a href="#" className="text-gray-400 hover:underline">
+            <a href="/about" className="text-gray-400 hover:underline">
               About the Company
             </a>
             <a href="#" className="text-gray-400 hover:underline">
@@ -39,15 +55,17 @@ const Footer = () => {
             <a href="#" className="text-gray-400 hover:underline">
               Our Projects
             </a>
-            <a href="#" className="text-gray-400 hover:underline">
+            <a href="/contact" className="text-gray-400 hover:underline">
               Contact
             </a>
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3 className="font-bold">Contact</h3>
-            <div className="w-[200px] h-[1px] bg-gray-300">
-              <div className="w-[70px] h-[2px] bg-red-600"></div>
+            <a href="/contact" className="font-bold">
+              Contact
+            </a>
+            <div className="lg:w-[200px] h-[1px] bg-gray-300">
+              <div className="lg:w-[70px] h-[2px] bg-red-600"></div>
             </div>
             <p className="text-gray-400">
               Goma, Himbi, Av du Lac N°59 <br /> Congo DRC
@@ -66,18 +84,20 @@ const Footer = () => {
 
           <div className="flex flex-col gap-4">
             <h3 className="font-bold">Gallery</h3>
-            <div className="w-[200px] h-[1px] bg-gray-300">
-              <div className="w-[70px] h-[2px] bg-red-600"></div>
+            <div className="lg:w-[200px] h-[1px] bg-gray-300">
+              <div className="lg:w-[70px] h-[2px] bg-red-600"></div>
             </div>
           </div>
         </div>
-        <footer className="bg-slate-900 flex gap-2 justify-center p-4">
-          &copy; 2024
-          <span className="text-red-600">Electrica</span>
+        <footer className="bg-slate-900 flex gap-2 justify-center lg:p-4">
+          &copy; {date}
+          <span className="text-red-600 font-bold hidden md:block">
+            Electrica
+          </span>
           <div className="w-[1px] h-8px bg-slate-400"></div>
           <p>All Rights Reserved</p>
           <div className="w-[1px] h-8px bg-slate-400"></div>
-          <span className="text-red-600">CHRIMK34</span>
+          <span className="text-red-600 font-bold">CHRIMK34</span>
         </footer>
       </div>
     </div>
