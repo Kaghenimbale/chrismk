@@ -6,7 +6,16 @@ import { FaArrowDown, FaArrowRight } from "react-icons/fa6";
 
 const Contact = () => {
   const [isOpen, setOpen] = useState<Number[]>([]);
-  const [id, setId] = useState(Number);
+  const [formData, setFormData] = useState({
+    Firstname: "",
+    Lastname: "",
+    Email: "",
+    Phone: "",
+    Company: "",
+    Address: "",
+    Range: "",
+    Message: "",
+  });
   const capabilities = [
     {
       id: 1,
@@ -30,12 +39,7 @@ const Contact = () => {
     },
   ];
 
-  const handleDisplay = (id: number) => {
-    // setOpen((prev) => !prev);
-    // setId(id);
-    // const exist = capabilities.filter((capabilitie) => capabilitie.id === id);
-    // console.log("id:", exist);
-
+  const handleCollapse = (id: number) => {
     if (isOpen.includes(id)) {
       const openCopy = isOpen.filter((element) => element !== id);
       setOpen(openCopy);
@@ -44,7 +48,25 @@ const Contact = () => {
       openCopy.push(id);
       setOpen(openCopy);
     }
-    console.log(isOpen);
+  };
+
+  const handleChange = (e: any) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log(formData);
+    setFormData({
+      Firstname: "",
+      Lastname: "",
+      Email: "",
+      Phone: "",
+      Company: "",
+      Address: "",
+      Range: "",
+      Message: "",
+    });
   };
   return (
     <div className="bg-gray-200">
@@ -55,6 +77,7 @@ const Contact = () => {
               className="flex flex-col items-end gap-4"
               action=""
               method="post"
+              onSubmit={handleSubmit}
             >
               <h2 className="flex justify-center w-full font-bold text-2xl text-white">
                 Contact Us
@@ -62,59 +85,83 @@ const Contact = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  name="First Name"
+                  name="Firstname"
+                  value={formData.Firstname}
                   placeholder="First Name"
+                  required
                   id=""
                   className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
+                  onChange={handleChange}
                 />
                 <input
                   type="text"
-                  name="Last Name"
+                  name="Lastname"
+                  value={formData.Lastname}
                   placeholder="Last Name"
+                  required
                   id=""
                   className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
+                  onChange={handleChange}
                 />
                 <input
                   type="email"
                   name="Email"
+                  value={formData.Email}
                   placeholder="Email"
+                  required
                   id=""
                   className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
+                  onChange={handleChange}
                 />
                 <input
                   type="tel"
                   name="Phone"
+                  value={formData.Phone}
                   placeholder="Phone"
+                  required
                   id=""
                   className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
+                  onChange={handleChange}
                 />
                 <input
                   type="text"
                   name="Company"
+                  value={formData.Company}
                   placeholder="Company"
+                  required
                   id=""
                   className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
+                  onChange={handleChange}
                 />
                 <input
                   type="text"
                   name="Address"
+                  value={formData.Address}
                   placeholder="Address"
+                  required
                   id=""
                   className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
+                  onChange={handleChange}
                 />
               </div>
 
               <input
                 type="range"
                 name="Range"
+                required
+                value={formData.Range}
                 id=""
                 className="w-[20rem] lg:w-[20rem] h-[40px] p-2"
+                onChange={handleChange}
               />
 
               <textarea
                 name="Message"
+                value={formData.Message}
                 placeholder="Message"
+                required
                 className="w-[20rem] lg:w-[21rem] h-[150px] lg:h-[80px] p-2 border-2"
+                onChange={handleChange}
                 id=""
               ></textarea>
 
@@ -144,7 +191,7 @@ const Contact = () => {
                   return (
                     <div key={capabilitie.id} className="">
                       <button
-                        onClick={() => handleDisplay(capabilitie.id)}
+                        onClick={() => handleCollapse(capabilitie.id)}
                         className="flex w-[100%] gap-4 items-center justify-between font-semibold bg-black text-white p-3"
                       >
                         {capabilitie.title}

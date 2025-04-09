@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { GrUserWorker } from "react-icons/gr";
 import { MdEngineering } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
@@ -7,6 +9,31 @@ import industry from "../../public/industry-with-electrical-engineer-working-hei
 import { FaCheckCircle } from "react-icons/fa";
 
 const Objectives = () => {
+  const [status, setStatus] = useState("about");
+  const [description, setDescription] = useState(
+    "With over four decades of experience,we deliver tailored logistics solutions to large-scale enterprises across the country. Our expertise ensure reliable, efficient service for specific market needs."
+  );
+  const datas = [
+    {
+      title: "about",
+      description:
+        "With over four decades of experience,we deliver tailored logistics solutions to large-scale enterprises across the country. Our expertise ensure reliable, efficient service for specific market needs.",
+    },
+    {
+      title: "mission",
+      description:
+        "To provide  smart, efficeint, and reliable logistics solutions powered by technology--delivering value and excellence to every client.",
+    },
+    {
+      title: "vision",
+      description:
+        "To lead the future of logistics through innovation, sustainability, and customer-fucosed service.",
+    },
+  ];
+  const handleClick = (title: string, description: string) => {
+    setStatus(title);
+    setDescription(description);
+  };
   return (
     <div className="w-full lg:w-[70vw] mx-auto p-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
       <div className="flex flex-col gap-8">
@@ -14,7 +41,7 @@ const Objectives = () => {
           <MdEngineering />
           WHY CHOOSE US
         </h2>
-        <p className="text-4xl font-bold lg:w-[40rem]">
+        <p className="text-3xl font-bold md:w-[25rem]">
           Providing quality Your electric services to all.
         </p>
         <div className="flex flex-col lg:flex-row gap-10">
@@ -52,25 +79,25 @@ const Objectives = () => {
             alt="imageIndustry"
           />
           <div className="flex gap-4 relative -top-10">
-            <button
-              type="button"
-              className="bg-red-700 text-white p-2 w-[10rem]"
-            >
-              About Us
-            </button>
-            <button type="button" className="bg-white p-2 w-[10rem]">
-              Our Mission
-            </button>
-            <button type="button" className="bg-white p-2 w-[10rem]">
-              Our Vision
-            </button>
+            {datas.map((data) => {
+              return (
+                <button
+                  type="button"
+                  key={data.title}
+                  className={`${
+                    status === data.title
+                      ? "bg-red-700 text-white p-2 w-[10rem]"
+                      : "bg-white text-black p-2 w-[10rem]"
+                  }`}
+                  onClick={() => handleClick(data.title, data.description)}
+                >
+                  {data.title}
+                </button>
+              );
+            })}
           </div>
         </div>
-        <p>
-          With over four decades of experience providing solutions to large
-          scale enterprises thourought the country, we offer end-to-end
-          logistics tailored for specifics markets enterprises throughout
-        </p>
+        <p>{description}</p>
 
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
