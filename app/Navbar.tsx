@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
-import { IoIosCloseCircle, IoMdCloseCircle } from "react-icons/io";
+import { IoMdCloseCircle } from "react-icons/io";
 import { SiThunderstore } from "react-icons/si";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 

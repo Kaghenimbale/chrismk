@@ -10,32 +10,40 @@ const Befenit = () => {
       <div className="flex flex-col gap-8">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
-          OUR BENEFITIES
+          OUR BENEFITS
         </h2>
 
         <h2 className="text-4xl font-bold lg:w-[25rem]">
-          Why You should Choose us
+          Why Choose ELectrica
         </h2>
 
         <p className="lg:w-[25rem]">
-          with over four decades of experience providing solutions to
-          large-scale enterprises throughout the globe, we offer end-to-end.
+          with over two years of proven expertise, we are committed to
+          delivering world-class electrical solutions tailored to your needs.
         </p>
 
         <div className="flex flex-col gap-4">
           <div className="flex gap-4 items-center">
             <BsArrowRightCircleFill className="text-red-600" />
-            <p>Our main goal is simply works for the customers.</p>
+            <p className="w-full lg:w-[20rem]">
+              Our primry goal is customer satisfaction trough reliable services.
+            </p>
           </div>
 
           <div className="flex gap-4 items-center">
             <BsArrowRightCircleFill className="text-red-600" />
-            <p>Strategies to ensure proactive services.</p>
+            <p className="w-full lg:w-[20rem]">
+              We implement proactive strategies to ensure uninterrupted
+              operations.
+            </p>
           </div>
 
           <div className="flex gap-4 items-center">
             <BsArrowRightCircleFill className="text-red-600" />
-            <p>Professional worldwide methodologies.</p>
+            <p className="w-full lg:w-[20rem]">
+              We follow globally recognized standards and methodologies for
+              consistent quality.
+            </p>
           </div>
         </div>
       </div>

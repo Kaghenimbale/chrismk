@@ -4,11 +4,19 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall, IoMdCloseCircle } from "react-icons/io";
 import { FaAngleRight } from "react-icons/fa";
+import Contact from "../components/Contact";
+import Form from "../components/Form";
 
 const page = () => {
   const [isOpen, setOpen] = useState(false);
   const handleClick = () => {
     setOpen((prev) => !prev);
+  };
+
+  const handleClose = (e: any) => {
+    if (e.target.id === "wrapper") {
+      setOpen((prev) => !prev);
+    }
   };
   return (
     <div className="mt-[5rem] w-[70vw] mx-auto py-10 ">
@@ -67,7 +75,12 @@ const page = () => {
         </div>
       </div>
       {isOpen ? (
-        <div className="absolute w-[100%] h-[100%] backdrop-blur-md top-0 left-0 z-10">
+        <div
+          id="wrapper"
+          onClick={handleClose}
+          className="absolute w-[100%] h-[100%] backdrop-blur-md top-0 left-0 z-10 flex items-center justify-center"
+        >
+          <Form />
           <button
             className="flex items-center justify-center absolute top-10 right-10"
             onClick={handleClick}

@@ -14,17 +14,17 @@ const Presentation = () => {
           WHO WE ARE
         </h2>
         <p className="text-4xl lg:text-5xl font-bold">
-          Providing High Quality Electrical Solution
+          Delivering Reliable and High Quality Electrical Solutions
         </p>
         <p className="text-red-700 text-2xl">
-          Our Operations Around the Country and Accross Various Electrical
-          Sectors
+          Nationwide Operations Accross Multiple Electrical Sectors Sectors
         </p>
 
         <span className="text-slate-700">
-          With over 2 years of experience providing solution to large scale
-          enterprises thourought the country, we offers end-to-end logistics
-          tailored for specific market.
+          With over 2 years of experience, Electrica delivers reliable
+          electrical solutions tailored for large-scale enterprises across the
+          country. We offer end-to-end logistics and customized services to meet
+          the unique needs of each market.
         </span>
 
         <div className="flex flex-col lg:flex-row gap-4">
@@ -36,22 +36,22 @@ const Presentation = () => {
             />
             <div>
               <p className="font-bold">KAGHENI Chris</p>
-              <span className="text-slate-700">CEO, Electrica</span>
+              <span className="text-slate-700 font italic">CEO, Electrica</span>
             </div>
           </div>
           <div>
             <ul>
               <li className="text-slate-700 flex gap-1 items-center">
                 <FaCircleRight />
-                Our solution are tested
+                Trusted and tested electrical solutions
               </li>
               <li className="text-slate-700 flex gap-1 items-center">
                 <FaCircleRight />
-                Leverage Experience in shipping
+                Deep expertise in logistics and shipping
               </li>
               <li className="text-slate-700 flex gap-1 items-center">
                 <FaCircleRight />
-                Proven, and best-in class
+                Proven track record of quality and excellence
               </li>
             </ul>
           </div>

@@ -42,7 +42,7 @@ const Objectives = () => {
           WHY CHOOSE US
         </h2>
         <p className="text-3xl font-bold md:w-[25rem]">
-          Providing quality Your electric services to all.
+          Delivering Reliable Electrical Services for Everyone
         </p>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="border-gray-300 border-2 w-fit p-4">
@@ -55,16 +55,18 @@ const Objectives = () => {
               <div className="flex flex-col gap-3">
                 <p className="font-bold">Easy Payment</p>
                 <span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                  Flexible and secure payment options designed for your
+                  convenience.
                 </span>
               </div>
             </div>
             <div className="flex gap-4">
               <GrUserWorker className="text-red-600 text-5xl" />
               <div className="flex flex-col gap-3">
-                <p className="font-bold">Trained Workers</p>
+                <p className="font-bold">Skilled Workforce</p>
                 <span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing.
+                  Our certified technicians are highly trained to deliver safe
+                  and efficient services.
                 </span>
               </div>
             </div>
@@ -97,7 +99,7 @@ const Objectives = () => {
             })}
           </div>
         </div>
-        <p>{description}</p>
+        <p className="lg:h-[5rem]">{description}</p>
 
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">

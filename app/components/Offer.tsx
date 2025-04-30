@@ -6,7 +6,6 @@ import img3 from "../../public/electrical-engineer_762625-3025.avif";
 import { TbNetwork } from "react-icons/tb";
 import { FaRegLightbulb } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";
-// import { TbAirConditioning } from "react-icons/tb";
 import { FaPlay } from "react-icons/fa";
 import Image from "next/image";
 
@@ -35,7 +34,7 @@ const Offer = () => {
               <p className="font-medium">COMPUTER MAINTENANCE</p>
             </div>
           </div>
-          <div>
+          <div className="">
             <Image
               src={img2}
               width={300}
