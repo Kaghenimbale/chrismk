@@ -35,7 +35,10 @@ const Presentation = () => {
               alt="CEO PHOTO"
             />
             <div>
-              <p className="font-bold">KAGHENI Chris</p>
+              <a href="kaghenimbale.vercel.com" className="font-bold">
+                KAGHENI Chris
+              </a>
+              <br />
               <span className="text-slate-700 font italic">CEO, Electrica</span>
             </div>
           </div>
