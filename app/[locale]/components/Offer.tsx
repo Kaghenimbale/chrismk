@@ -1,8 +1,8 @@
 import React from "react";
 import { MdEngineering } from "react-icons/md";
-import img1 from "../../public/a-man-with-a-white-helmet-and-glasses-is-smiling-he-is-wearing-an-orange-shirt-with-a-pattern-photo.jpg";
-import img2 from "../../public/worker-red-uniform-operating-control-panel-industrial-machine-night_753333-6558.jpg";
-import img3 from "../../public/electrical-engineer_762625-3025.avif";
+import img1 from "../../../public/a-man-with-a-white-helmet-and-glasses-is-smiling-he-is-wearing-an-orange-shirt-with-a-pattern-photo.jpg";
+import img2 from "../../../public/worker-red-uniform-operating-control-panel-industrial-machine-night_753333-6558.jpg";
+import img3 from "../../../public/electrical-engineer_762625-3025.avif";
 import { TbNetwork } from "react-icons/tb";
 import { FaRegLightbulb } from "react-icons/fa";
 import { FaComputer } from "react-icons/fa6";

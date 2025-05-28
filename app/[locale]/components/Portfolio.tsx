@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { MdEngineering } from "react-icons/md";
-import Engineer1 from "../../public/360_F_782265344_F5Xl72Q4g09e97Zl2q9iTa0CfHdCIAli.jpg";
-import Engineer2 from "../../public/360_F_855658388_mhAf6KOoCuzVNG0wuz8cobAnm2qFnHA1.jpg";
-import Engineer3 from "../../public/OTC-Electricity-1020x615-1.jpg";
+import Engineer1 from "../../../public/360_F_782265344_F5Xl72Q4g09e97Zl2q9iTa0CfHdCIAli.jpg";
+import Engineer2 from "../../../public/360_F_855658388_mhAf6KOoCuzVNG0wuz8cobAnm2qFnHA1.jpg";
+import Engineer3 from "../../../public/OTC-Electricity-1020x615-1.jpg";
 
 const Portfolio = () => {
   return (

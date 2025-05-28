@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { MdEngineering, MdStarRate } from "react-icons/md";
-import image1 from "../../public/360_F_782265344_F5Xl72Q4g09e97Zl2q9iTa0CfHdCIAli.jpg";
-import image2 from "../../public/a-man-with-a-white-helmet-and-glasses-is-smiling-he-is-wearing-an-orange-shirt-with-a-pattern-photo.jpg";
+import image1 from "../../../public/360_F_782265344_F5Xl72Q4g09e97Zl2q9iTa0CfHdCIAli.jpg";
+import image2 from "../../../public/a-man-with-a-white-helmet-and-glasses-is-smiling-he-is-wearing-an-orange-shirt-with-a-pattern-photo.jpg";
 
 const Testimonial = () => {
   return (

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { GrUserWorker } from "react-icons/gr";
 import { MdEngineering } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
-import industry from "../../public/industry-with-electrical-engineer-working-heights-generative-ai_220873-23877.png";
+import industry from "../../../public/industry-with-electrical-engineer-working-heights-generative-ai_220873-23877.png";
 import { FaCheckCircle } from "react-icons/fa";
 
 const Objectives = () => {

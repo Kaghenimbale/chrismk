@@ -1,11 +1,21 @@
+import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const LanguageSwitcher = () => {
   const [choice, setChoice] = useState("");
-  const handleChange = (e: any) => {
-    setChoice(e.target.value);
+  const pathname = usePathname();
+  const router = useRouter();
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLocale = e.target.value;
+    if (!newLocale) return;
+    const segments = pathname.split("/");
+    segments[1] = newLocale;
+    const newPath = segments.join("/");
+    router.replace(newPath);
   };
   console.log(choice);
+  console.log(pathname);
+  console.log(router);
   return (
     <div className="relative top-2 left-10">
       <select

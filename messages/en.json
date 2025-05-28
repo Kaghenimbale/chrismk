@@ -1,0 +1,11 @@
+{
+  "HomePage": {
+    "title": {
+      "first": "Welcome to",
+      "second": "CHRISMK Electrical services"
+    },
+    "description": "Get and Build Quality Services in Electricity and Networking.",
+    "contactBtn": "CONTACT US NOW",
+    "about": "Go to the about page"
+  }
+}

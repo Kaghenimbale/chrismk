@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import chris from "../../public/Christiant Kagheni.png";
+import chris from "../../../public/Christiant Kagheni.png";
 import { MdEngineering } from "react-icons/md";
 import { FaCircleRight } from "react-icons/fa6";
 
