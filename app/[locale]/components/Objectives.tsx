@@ -7,29 +7,18 @@ import { MdEngineering } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import industry from "../../../public/industry-with-electrical-engineer-working-heights-generative-ai_220873-23877.png";
 import { FaCheckCircle } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 const Objectives = () => {
+  const t = useTranslations("HomeComponents.Objectives");
   const [status, setStatus] = useState("about");
   const [description, setDescription] = useState(
     "With over four decades of experience,we deliver tailored logistics solutions to large-scale enterprises across the country. Our expertise ensure reliable, efficient service for specific market needs."
   );
-  const datas = [
-    {
-      title: "about",
-      description:
-        "With over four decades of experience,we deliver tailored logistics solutions to large-scale enterprises across the country. Our expertise ensure reliable, efficient service for specific market needs.",
-    },
-    {
-      title: "mission",
-      description:
-        "To provide  smart, efficeint, and reliable logistics solutions powered by technology--delivering value and excellence to every client.",
-    },
-    {
-      title: "vision",
-      description:
-        "To lead the future of logistics through innovation, sustainability, and customer-fucosed service.",
-    },
-  ];
+  const datas = t.raw("data") as {
+    title: string;
+    description: string;
+  }[];
   const handleClick = (title: string, description: string) => {
     setStatus(title);
     setDescription(description);
@@ -39,35 +28,27 @@ const Objectives = () => {
       <div className="flex flex-col gap-8">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
-          WHY CHOOSE US
+          {t("title")}
         </h2>
-        <p className="text-3xl font-bold md:w-[25rem]">
-          Delivering Reliable Electrical Services for Everyone
-        </p>
+        <p className="text-3xl font-bold md:w-[25rem]">{t("description")}</p>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="border-gray-300 border-2 w-fit p-4">
             <span className="text-8xl font-extrabold">20</span>
-            <p className="text-wrap w-[4rem]">Years of experience</p>
+            <p className="text-wrap w-[4rem]">{t("experience")}</p>
           </div>
           <div className="w-[18rem] flex flex-col gap-4">
             <div className="flex gap-4">
               <RiSecurePaymentFill className="text-red-600 text-5xl" />
               <div className="flex flex-col gap-3">
-                <p className="font-bold">Easy Payment</p>
-                <span>
-                  Flexible and secure payment options designed for your
-                  convenience.
-                </span>
+                <p className="font-bold">{t("payment.title")}</p>
+                <span>{t("payment.description")}</span>
               </div>
             </div>
             <div className="flex gap-4">
               <GrUserWorker className="text-red-600 text-5xl" />
               <div className="flex flex-col gap-3">
-                <p className="font-bold">Skilled Workforce</p>
-                <span>
-                  Our certified technicians are highly trained to deliver safe
-                  and efficient services.
-                </span>
+                <p className="font-bold">{t("workforce.title")}</p>
+                <span>{t("workforce.description")}</span>
               </div>
             </div>
           </div>
@@ -81,11 +62,11 @@ const Objectives = () => {
             alt="imageIndustry"
           />
           <div className="flex gap-4 relative -top-10">
-            {datas.map((data) => {
+            {datas.map((data, index) => {
               return (
                 <button
                   type="button"
-                  key={data.title}
+                  key={index}
                   className={`${
                     status === data.title
                       ? "bg-red-700 text-white p-2 w-[10rem]"
@@ -104,15 +85,15 @@ const Objectives = () => {
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
             <FaCheckCircle className="text-red-700" />
-            <p>Our Solution are tested</p>
+            <p>{t("solutions.first")}</p>
           </div>
           <div className="flex gap-2">
             <FaCheckCircle className="text-red-700" />
-            <p>Leverage our experience in service</p>
+            <p>{t("solutions.second")}</p>
           </div>
           <div className="flex gap-2">
             <FaCheckCircle className="text-red-700" />
-            <p>Proven, and Best in class</p>
+            <p>{t("solutions.third")}</p>
           </div>
         </div>
       </div>

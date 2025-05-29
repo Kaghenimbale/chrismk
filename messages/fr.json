@@ -1,11 +1,65 @@
 {
-  "HomePage": {
-    "title": {
-      "first": "Bienvenue chez",
-      "second": "CHRISMK Services électriques"
+  "HomeComponents": {
+    "about": {
+      "title": {
+        "first": "Bienvenue chez",
+        "second": "CHRISMK Services électriques"
+      },
+      "description": "Obtenez et construisez des services de qualité en électricité et en réseau",
+      "contactBtn": "CONTACTEZ-NOUS MAINTENANT"
     },
-    "description": "Obtenez et construisez des services de qualité en électricité et en réseau",
-    "contactBtn": "CONTACTEZ-NOUS MAINTENANT",
-    "about": "Go to the about page"
+    "presentation": {
+      "title": "QUI SOMMES NOUS",
+      "title1": "Fournir des solutions électriques fiables et de haute qualité",
+      "title2": "Opérations à l'échelle nationale dans plusieurs secteurs électriques",
+      "description": "Forte de plus de deux ans d'expérience, Electrica propose des solutions électriques fiables et adaptées aux grandes entreprises du pays. Nous proposons une logistique complète et des services personnalisés pour répondre aux besoins spécifiques de chaque marché.",
+      "values": {
+        "first": "Des solutions électriques fiables et testées",
+        "second": "Une expertise en logistique et en expédition",
+        "third": "Expérience avérée en matière de qualité et d'excellence"
+      }
+    },
+    "Offer": {
+      "title": "QUI SOMMES NOUS",
+      "description": "Nous offrons des services électriques rentables",
+      "services": {
+        "first": "MAINTENANCE INFORMATIQUE",
+        "second": "INSTALLATION DE RÉSEAU",
+        "third": "INSTALLATION ÉLECTRIQUE"
+      },
+      "OurPrinciple": "Nous Fournissons des services d'électricien et d'électricité de la meilleur qualité à tous."
+    },
+    "Objectives": {
+      "title": "POURQUOI NOUS CHOISIR",
+      "description": "Fournir des services électriques fiables à tous",
+      "experience": "Ans d'experience",
+      "payment": {
+        "title": "Paiement Facile",
+        "description": "Des options de paiement flexibles et sécurisées conçues pour votre confort."
+      },
+      "workforce": {
+        "title": "Main d'oeuvre Qualifiée",
+        "description": "Nos techniciens certifiés sont hautement qualifiés pour fournir des services sûrs et efficaces."
+      },
+      "data": [
+        {
+          "title": "À propos",
+          "description": "Avec plus de quatre décennies d'experience, nous fournissons des solutions logistiques sur mesure."
+        },
+        {
+          "title": "mission",
+          "description": "Fournir des solutions logistiques intelligentes, efficaces et fiables à nos clients."
+        },
+        {
+          "title": "vision",
+          "description": "Être à la pointe de l'avenir de la logistique grâce à l'innovation, à la durabilité et à l'excellence."
+        }
+      ],
+      "solutions": {
+        "first": "Nos Solutions sont testées.",
+        "second": "Tirer parti de notre expérience en matière de service.",
+        "third": "Éprouvé et le meilleur de sa catégorie."
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@ import img from "../../../public/1_Ntcxw4Uyx5m8SaJmS0OJrg.jpg";
 import { useTranslations } from "next-intl";
 
 const About = () => {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("HomeComponents.about");
   return (
     <div className="flex items-center justify-center bg-[url('/1_Ntcxw4Uyx5m8SaJmS0OJrg.jpg')] bg-center bg-cover bg-no-repeat">
       <div className="w-[100vw] px-10 lg:px-0 lg:w-[70vw] h-[93vh] mx-auto flex flex-col items-start justify-center gap-5 text-white">

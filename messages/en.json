@@ -1,11 +1,65 @@
 {
-  "HomePage": {
-    "title": {
-      "first": "Welcome to",
-      "second": "CHRISMK Electrical services"
+  "HomeComponents": {
+    "about": {
+      "title": {
+        "first": "Welcome to",
+        "second": "CHRISMK Electrical services"
+      },
+      "description": "Get and Build Quality Services in Electricity and Networking.",
+      "contactBtn": "CONTACT US NOW"
     },
-    "description": "Get and Build Quality Services in Electricity and Networking.",
-    "contactBtn": "CONTACT US NOW",
-    "about": "Go to the about page"
+    "presentation": {
+      "title": "WHO WE ARE",
+      "title1": "Delivering Reliable and High Quality Electrical Solutions",
+      "title2": "Nationwide Operations Accross Multiple Electrical Sectors Sectors",
+      "description": "With over 2 years of experience, Electrica delivers reliable electrical solutions tailored for large-scale enterprises across the country. We offer end-to-end logistics and customized services to meet the unique needs of each market.",
+      "values": {
+        "first": "Trusted and tested electrical solutions",
+        "second": "Deep expertise in logistics and shipping",
+        "third": "Proven track record of quality and excellence"
+      }
+    },
+    "Offer": {
+      "title": "WHO WE ARE",
+      "description": "We Offer Cost Efficient Electrical Services",
+      "services": {
+        "first": "COMPUTER MAINTENANCE",
+        "second": "NETWORK INSTALLATION",
+        "third": "ELECTRICAL INSTALLATION"
+      },
+      "OurPrinciple": "We are Providing Best Quality Electrician and Electrical Services to All."
+    },
+    "Objectives": {
+      "title": "WHY CHOOSE US",
+      "description": "Delivering Reliable Electrical Services for Everyone",
+      "experience": "Years of experience",
+      "payment": {
+        "title": "Easy Payment",
+        "description": "Flexible and secure payment options designed for your convenience."
+      },
+      "workforce": {
+        "title": "Skilled Workforce",
+        "description": "Our certified technicians are highly trained to deliver safe and efficient services."
+      },
+      "data": [
+        {
+          "title": "about",
+          "description": "With over four decades of experience,we deliver tailored logistics solutions to large-scale enterprises across the country. Our expertise ensure reliable, efficient service for specific market needs."
+        },
+        {
+          "title": "mission",
+          "description": "To provide  smart, efficient, and reliable logistics solutions powered by technology--delivering value and excellence to every client."
+        },
+        {
+          "title": "vision",
+          "description": "To lead the future of logistics through innovation, sustainability, and customer-fucosed service."
+        }
+      ],
+      "solutions": {
+        "first": "Our Solution are tested",
+        "second": "Leverage our experience in service",
+        "third": "Proven, and Best in class"
+      }
+    }
   }
 }
