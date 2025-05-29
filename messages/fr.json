@@ -88,6 +88,10 @@
           "description": "Nous livrons le service avec précision, sécurité et professionnalisme dans les délais et le budget impartis."
         }
       ]
+    },
+    "portfolio": {
+      "title": "NOTRE PORTEFEUILLE",
+      "description": "Nous fournissons des résultats aux leaders de l'industrie"
     }
   }
 }
