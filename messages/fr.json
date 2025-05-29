@@ -60,6 +60,16 @@
         "second": "Tirer parti de notre expérience en matière de service.",
         "third": "Éprouvé et le meilleur de sa catégorie."
       }
+    },
+    "benefits": {
+      "title": "NOS AVANTAGES",
+      "question": "Pourquoi choisir ELectrica",
+      "description": "Avec plus de deux ans d'expertise éprouvée, nous nous engageons à fournir des solutions électriques de classe mondiale adaptées à vos besoins.",
+      "goals": {
+        "first": "Notre objectif principal est la satisfaction du client grâce à des services fiables.",
+        "second": "Nous mettons en oeuvre des stratégies proatives pour assurer des opérations ininterrompues.",
+        "third": "Nous mettons en oeuvre des strategies proactives pour assurer des operations ininterrompues."
+      }
     }
   }
 }

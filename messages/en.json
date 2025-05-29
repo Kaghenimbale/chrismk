@@ -60,6 +60,16 @@
         "second": "Leverage our experience in service",
         "third": "Proven, and Best in class"
       }
+    },
+    "benefits": {
+      "title": "OUR BENEFITS",
+      "secondTitle": "Why Choose ELectrica",
+      "description": "with over two years of proven expertise, we are committed to delivering world-class electrical solutions tailored to your needs.",
+      "goals": {
+        "first": "Our primry goal is customer satisfaction trough reliable services.",
+        "second": "We implement proactive strategies to ensure uninterrupted operations.",
+        "third": "We implement proactive strategies to ensure uninterrupted operations."
+      }
     }
   }
 }
