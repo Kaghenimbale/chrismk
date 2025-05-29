@@ -70,6 +70,24 @@
         "second": "Nous mettons en oeuvre des stratégies proatives pour assurer des opérations ininterrompues.",
         "third": "Nous mettons en oeuvre des strategies proactives pour assurer des operations ininterrompues."
       }
+    },
+    "work": {
+      "title": "COMMENT NOUS TRAVAILLONS",
+      "process": "Un processus simple en 3 étapes pour fournir un service de qualité",
+      "works": [
+        {
+          "title": "Demander un devis",
+          "description": "Contactez-nous, partagez vos besoins de services et recevez un devis personnalisé."
+        },
+        {
+          "title": "Évaluation du site",
+          "description": "Nos experts évalueront votre site ou projet pour plannifier la solution la meilleur et la plus efficace."
+        },
+        {
+          "title": "Éxecution des services",
+          "description": "Nous livrons le service avec précision, sécurité et professionnalisme dans les délais et le budget impartis."
+        }
+      ]
     }
   }
 }

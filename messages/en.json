@@ -63,13 +63,31 @@
     },
     "benefits": {
       "title": "OUR BENEFITS",
-      "secondTitle": "Why Choose ELectrica",
+      "question": "Why Choose ELectrica",
       "description": "with over two years of proven expertise, we are committed to delivering world-class electrical solutions tailored to your needs.",
       "goals": {
         "first": "Our primry goal is customer satisfaction trough reliable services.",
         "second": "We implement proactive strategies to ensure uninterrupted operations.",
         "third": "We implement proactive strategies to ensure uninterrupted operations."
       }
+    },
+    "work": {
+      "title": "HOW WE WORK",
+      "process": "A Simple 3-Step Process to Deliver Quality Services",
+      "works": [
+        {
+          "title": "Request a Quote",
+          "description": "Get in touch with us, share your service needs and receive a tailored quote."
+        },
+        {
+          "title": "Site Assessment",
+          "description": "Our expert will assess your site or project to plan the best and most efficient solution."
+        },
+        {
+          "title": "Service Execution",
+          "description": "We deliver the service with precision, safety and professionalism on time and on budget."
+        }
+      ]
     }
   }
 }
