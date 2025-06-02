@@ -33,7 +33,7 @@ const Objectives = () => {
         <p className="text-3xl font-bold md:w-[25rem]">{t("description")}</p>
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="border-gray-300 border-2 w-fit p-4">
-            <span className="text-8xl font-extrabold">20</span>
+            <span className="text-8xl font-extrabold">04</span>
             <p className="text-wrap w-[4rem]">{t("experience")}</p>
           </div>
           <div className="w-[18rem] flex flex-col gap-4">

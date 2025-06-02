@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 
 const Form = () => {
+  const t = useTranslations("HomeComponents.contact");
   const [formData, setFormData] = useState({
     Firstname: "",
     Lastname: "",
@@ -39,14 +41,14 @@ const Form = () => {
         onSubmit={handleSubmit}
       >
         <h2 className="flex justify-center w-full font-bold text-2xl text-white">
-          Contact Us
+          {t("message")}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <input
             type="text"
             name="Firstname"
             value={formData.Firstname}
-            placeholder="First Name"
+            placeholder={t("form.Name")}
             required
             id=""
             className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
@@ -56,7 +58,7 @@ const Form = () => {
             type="text"
             name="Lastname"
             value={formData.Lastname}
-            placeholder="Last Name"
+            placeholder={t("form.Firstname")}
             required
             id=""
             className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
@@ -66,7 +68,7 @@ const Form = () => {
             type="email"
             name="Email"
             value={formData.Email}
-            placeholder="Email"
+            placeholder={t("form.Email")}
             required
             id=""
             className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
@@ -74,9 +76,9 @@ const Form = () => {
           />
           <input
             type="tel"
-            name="Phone"
+            name={t("form.Name")}
             value={formData.Phone}
-            placeholder="Phone"
+            placeholder={t("form.Phone")}
             required
             id=""
             className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
@@ -86,7 +88,7 @@ const Form = () => {
             type="text"
             name="Company"
             value={formData.Company}
-            placeholder="Company"
+            placeholder={t("form.Company")}
             required
             id=""
             className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
@@ -96,7 +98,7 @@ const Form = () => {
             type="text"
             name="Address"
             value={formData.Address}
-            placeholder="Address"
+            placeholder={t("form.Address")}
             required
             id=""
             className="w-[20rem] lg:w-[10rem] h-[50px] p-2"
@@ -125,7 +127,7 @@ const Form = () => {
         ></textarea>
 
         <button className="w-full h-[40px] bg-black text-white" type="submit">
-          SUBMIT
+          {t("form.Submit")}
         </button>
       </form>
     </div>

@@ -3,7 +3,7 @@
     "about": {
       "title": {
         "first": "Welcome to",
-        "second": "CHRISMK Electrical services"
+        "second": "Electrica services"
       },
       "description": "Get and Build Quality Services in Electricity and Networking.",
       "contactBtn": "CONTACT US NOW"
@@ -92,6 +92,45 @@
     "portfolio": {
       "title": "OUR PORTFOLIO",
       "description": "We delivered results for industry leaders"
+    },
+    "contact": {
+      "title": "CAPABILITIES",
+      "service": "Services that help our customers meet",
+      "description": "With over four decades of experience providing solutions to large scale enterprises throughout the country, we offer end to end.",
+      "capabilities": [
+        {
+          "id": 1,
+          "title": "Comprehensive Electrical Services",
+          "description": "Covering everything from power distribution to lighting and safety systems, designed for efficiency and longevity."
+        },
+
+        {
+          "id": 2,
+          "title": "Scalable Network Infrastructure",
+          "description": "Building robust and adaptable networks to support your current and future data and communication demands."
+        },
+
+        {
+          "id": 3,
+          "title": "Tailored Computer science",
+          "description": "Offering sotware development, system integration, and IT support customized to your specific business requirements."
+        }
+      ],
+      "message": "Contact Us",
+      "form": {
+        "Name": "Name",
+        "Firstname": "First Name",
+        "Email": "Email",
+        "Phone": "Phone",
+        "Company": "Company",
+        "Address": "Address",
+        "Submit": "Submit"
+      }
+    },
+    "testimonial": {
+      "title": "TESTIMONIALS",
+      "question": "What Our Client Say about us.",
+      "testimonials": []
     }
   }
 }

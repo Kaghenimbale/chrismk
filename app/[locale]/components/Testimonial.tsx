@@ -3,17 +3,19 @@ import React from "react";
 import { MdEngineering, MdStarRate } from "react-icons/md";
 import image1 from "../../../public/360_F_782265344_F5Xl72Q4g09e97Zl2q9iTa0CfHdCIAli.jpg";
 import image2 from "../../../public/a-man-with-a-white-helmet-and-glasses-is-smiling-he-is-wearing-an-orange-shirt-with-a-pattern-photo.jpg";
+import { useTranslations } from "next-intl";
 
 const Testimonial = () => {
+  const t = useTranslations("HomeComponents.testimonial");
   return (
     <div className="p-10">
       <div className="w-full lg:w-[70vw] mx-auto flex flex-col items-center gap-4">
         <h2 className="text-red-700 text-2xl flex gap-1 items-center">
           <MdEngineering />
-          TESTIMONIALS
+          {t("title")}
         </h2>
         <p className="text-4xl lg:text-5xl font-bold lg:w-[30rem] text-center">
-          What Our Client Say about us
+          {t("question")}
         </p>
 
         <div className="flex gap-6 flex-col lg:flex-row">

@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
   console.log(pathname);
   console.log(router);
   return (
-    <div className="relative top-2 left-10">
+    <div className="relative top-20 right-8">
       <select
         className="text-blue-950 w-[45px] h-[30px] rounded-md absolute"
         name=""

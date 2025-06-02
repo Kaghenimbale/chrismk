@@ -3,7 +3,7 @@
     "about": {
       "title": {
         "first": "Bienvenue chez",
-        "second": "CHRISMK Services électriques"
+        "second": "Electrica Services"
       },
       "description": "Obtenez et construisez des services de qualité en électricité et en réseau",
       "contactBtn": "CONTACTEZ-NOUS MAINTENANT"
@@ -12,7 +12,7 @@
       "title": "QUI SOMMES NOUS",
       "title1": "Fournir des solutions électriques fiables et de haute qualité",
       "title2": "Opérations à l'échelle nationale dans plusieurs secteurs électriques",
-      "description": "Forte de plus de deux ans d'expérience, Electrica propose des solutions électriques fiables et adaptées aux grandes entreprises du pays. Nous proposons une logistique complète et des services personnalisés pour répondre aux besoins spécifiques de chaque marché.",
+      "description": "Avec plus de deux ans d'expérience, Electrica propose des solutions électriques fiables et adaptées aux grandes entreprises du pays. Nous proposons une logistique complète et des services personnalisés pour répondre aux besoins spécifiques de chaque marché.",
       "values": {
         "first": "Des solutions électriques fiables et testées",
         "second": "Une expertise en logistique et en expédition",
@@ -44,7 +44,7 @@
       "data": [
         {
           "title": "À propos",
-          "description": "Avec plus de quatre décennies d'experience, nous fournissons des solutions logistiques sur mesure."
+          "description": "Avec plus de deux ans d'experience, nous fournissons des solutions logistiques sur mesure."
         },
         {
           "title": "mission",
@@ -92,6 +92,45 @@
     "portfolio": {
       "title": "NOTRE PORTEFEUILLE",
       "description": "Nous fournissons des résultats aux leaders de l'industrie"
+    },
+    "contact": {
+      "title": "CAPACITÉS",
+      "service": "Des services qui aident nos clients à répondre",
+      "description": "Avec plus de deux ans d'expérience dans la fourniture des solutions aux grandes entreprises à travers le pays, nous proposons des solutions de bout en bout.",
+      "capabilities": [
+        {
+          "id": 1,
+          "title": "Services électriques complets",
+          "description": "Couvrant tout, de la distribution d'énergie aux systèmes d'éclairage et de sécurité, conçus pour l'efficacité et la longévité."
+        },
+
+        {
+          "id": 2,
+          "title": "Infrastructure réseau évolutive",
+          "description": "Construire des réseaux robustes et adaptables pour répondre à vos desoins actuels et futurs en matière des données et de communication."
+        },
+
+        {
+          "id": 3,
+          "title": "Informatique sur mesure",
+          "description": "Proposants le développement de logiciel, l'integration de systèmes et le support informatique personnalisés en fonction des besoins spécifiques de votre."
+        }
+      ],
+      "message": "Contactez Nous",
+      "form": {
+        "Name": "Nom",
+        "Firstname": "Prénom",
+        "Email": "Email",
+        "Phone": "Téléphone",
+        "Company": "Entreprise",
+        "Address": "Addresse",
+        "Submit": "Envoyé"
+      }
+    },
+    "testimonial": {
+      "title": "TÉMOIGNAGES",
+      "question": "Ce que nos clients disent de nous.",
+      "testimonials": []
     }
   }
 }
