@@ -67,13 +67,18 @@ const Footer = () => {
             <div className="lg:w-[200px] h-[1px] bg-gray-300">
               <div className="lg:w-[70px] h-[2px] bg-red-600"></div>
             </div>
-            <p className="text-gray-400">
+            <address className="text-gray-400">
               Goma, Himbi, Av du Lac N°59 <br /> Congo DRC
-            </p>
+            </address>
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 items-center">
                 <MdMail className="text-red-600" />
-                <span className="text-gray-400">kaghenimbale@gmail.com</span>
+                <a
+                  href="mailto:kaghenimbale@gmail.com"
+                  className="text-gray-400"
+                >
+                  kaghenimbale@gmail.com
+                </a>
               </div>
               <div className="flex gap-4 items-center">
                 <MdPhone className="text-red-600" />
