@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import { FaCheckCircle, FaRegLightbulb } from "react-icons/fa";
-import coffret from "../../public/coffret.jpg";
-import imageLight from "../../public/Gen-AI-Enterprise-Futurist-Speaker.jpg";
+import coffret from "../../../public/coffret.jpg";
+import imageLight from "../../../public/Gen-AI-Enterprise-Futurist-Speaker.jpg";
 import { FaComputer } from "react-icons/fa6";
 import { TbNetwork, TbShoppingCartBolt } from "react-icons/tb";
 import { BsThreeDots } from "react-icons/bs";

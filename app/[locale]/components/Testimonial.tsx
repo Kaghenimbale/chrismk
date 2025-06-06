@@ -7,6 +7,12 @@ import { useTranslations } from "next-intl";
 
 const Testimonial = () => {
   const t = useTranslations("HomeComponents.testimonial");
+  const testimonials = t.raw("testimonials") as {
+    satisfaction: string;
+    name: number;
+    rate: string;
+    message: string;
+  }[];
   return (
     <div className="p-10">
       <div className="w-full lg:w-[70vw] mx-auto flex flex-col items-center gap-4">
@@ -35,12 +41,11 @@ const Testimonial = () => {
                 <MdStarRate className="text-yellow-500" />
                 <MdStarRate className="text-white" />
               </div>
-              <p className="text-gray-400">
-                Build and implement innovative, profitable and sustainable
-                products and services that help.
-              </p>
-              <h3 className="font-bold">Mark Wooden</h3>
-              <span className="text-red-600 font-bold">Admin</span>
+              <p className="text-gray-400">{testimonials[0].message}</p>
+              <h3 className="font-bold">Jean Mwamba</h3>
+              <span className="text-red-600 font-bold">
+                {testimonials[0].satisfaction}
+              </span>
             </div>
           </div>
 
@@ -60,12 +65,11 @@ const Testimonial = () => {
                 <MdStarRate className="text-white" />
                 <MdStarRate className="text-white" />
               </div>
-              <p className="text-gray-400">
-                Build and implement innovative, profitable and sustainable
-                products and services that help.
-              </p>
-              <h3 className="font-bold">Chris kroos</h3>
-              <span className="text-red-600 font-bold">Admin</span>
+              <p className="text-gray-400">{testimonials[1].message}</p>
+              <h3 className="font-bold">Alexandre Kabangu</h3>
+              <span className="text-red-600 font-bold">
+                {testimonials[1].satisfaction}
+              </span>
             </div>
           </div>
         </div>

@@ -130,7 +130,81 @@
     "testimonial": {
       "title": "TÉMOIGNAGES",
       "question": "Ce que nos clients disent de nous.",
-      "testimonials": []
+      "testimonials": [
+        {
+          "name": "Jean Mwamba",
+          "rate": "5",
+          "satisfaction": "Client satisfait",
+          "message": "Grâce à ELECTRICA, notre maison est désormais câblée de manière sûre et efficace. Leur souci du détail est incomparable !"
+        },
+        {
+          "name": "Alexandre Kabangu",
+          "rate": "4",
+          "satisfaction": "Client satisfait",
+          "message": "J'ai été impressionné par la propreté et l'organisation du travail. ELECTRICA accorde une grande importance à la sécurité et à la satisfaction de ses clients."
+        }
+      ]
+    },
+    "footer": {
+      "about": "À propos de nous",
+      "description": "Désire obtenir la douleur par elle-même, parce que c'est de la douleur, mais parfois les circonstances.",
+      "right": "Tous droits réservés",
+      "explore": "Explorer",
+      "link1": "À propos de l'entreprise",
+      "link2": "Rencontrer l'équipe",
+      "link3": "Actualités et médias",
+      "link4": "Nos projets",
+      "gallery": "Gallerie"
     }
+  },
+  "AboutComponent": {
+    "title": "À propos de nous",
+    "description": "Nous sommes des professionnels dévoués offrant des services fiables d’entretien électrique et domestique, adaptés à vos besoins. Qu’il s’agisse d’une réparation rapide ou d’un contrôle complet du système, notre équipe d’experts veille à votre sécurité et à votre satisfaction. Forts de plusieurs années d’expérience et animés par la passion du travail bien fait, nous sommes fiers de proposer des solutions durables.",
+    "title1": "Services rapides et amicaux",
+    "description1": "Besoin d’un travail bien fait – et rapidement ? Nos techniciens qualifiés sont prêts à vous aider avec des services fiables, le jour même. Nous apportons une attitude chaleureuse, une expertise approfondie et un engagement à dépasser vos attentes.",
+    "service1": "Professionnels vérifiés et contrôlés",
+    "service2": "Satisfaction garantie par notre Promesse de Bonheur Handy",
+    "service3": "Assistance 24/7 par un vrai humain (pas de robots !)",
+    "service4": "Tarification honnête sans frais cachés",
+    "btntext": "Faire une demande",
+    "service": "NOS SERVICES",
+    "services": [
+      [
+        {
+          "id": 1,
+          "Icon": "FaComputer",
+          "title": "MAINTENANCE INFORMATIQUE",
+          "description": "Gardez vos appareils en parfait état grâce à nos services de maintenance informatique. De la suppression de virus à l’optimisation du système, nous garantissons des machines sûres, rapides et fiables."
+        },
+        {
+          "id": 2,
+          "Icon": "TbNetwork",
+          "title": "INSTALLATION DE RÉSEAUX",
+          "description": "Nous concevons et installons des systèmes réseau efficaces et sécurisés pour les maisons et les entreprises. Qu’ils soient câblés ou sans fil, nos réseaux sont conçus pour la vitesse, la stabilité et l’évolution future."
+        }
+      ],
+      [
+        {
+          "id": 3,
+          "Icon": "FaRegLightbulb",
+          "title": "INSTALLATION ÉLECTRIQUE",
+          "description": "Nos électriciens certifiés s’occupent de tous types d’installations électriques – de l’éclairage aux prises, en passant par les systèmes de câblage complets. Nous assurons un travail sûr et conforme aux normes, pour les nouvelles constructions ou les rénovations."
+        },
+        {
+          "id": 4,
+          "Icon": "TbShoppingCartBolt",
+          "title": "FOURNITURES ÉLECTRIQUES",
+          "description": "Nous fournissons des composants et accessoires électriques de haute qualité. Que vous soyez un entrepreneur ou un passionné de bricolage, vous trouverez tout ce qu’il vous faut – des câbles aux disjoncteurs – à des prix compétitifs."
+        }
+      ]
+    ]
+  },
+  "ContactComponent": {
+    "title": "Contactez-nous",
+    "description": "Votre satisfaction est notre priorité, c’est pourquoi nous vous plaçons au centre de toutes nos actions. Nos coordonnées sont toujours disponibles pour recevoir vos demandes.",
+    "description1": "Vous comptez pour nous. Chez Electrica, il y a toujours quelque chose pour chacun ! Contactez-moi maintenant pour réserver un service ou acheter un produit.",
+    "contactBtn": "Réserver un service",
+    "Address": "Adresse",
+    "Phone": "Téléphone"
   }
 }

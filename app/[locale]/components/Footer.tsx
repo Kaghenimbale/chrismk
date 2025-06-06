@@ -1,11 +1,13 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import React from "react";
 import { FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { MdMail, MdPhone } from "react-icons/md";
 
 const Footer = () => {
+  const t = useTranslations("HomeComponents.footer");
   const date = Date().slice(11, 15);
   return (
     <div className="w-full px-10 pt-10 bg-slate-950 text-white">
@@ -13,12 +15,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <div className="flex flex-col gap-4">
             <a href="/contact" className="text-2xl font-bold">
-              About Us
+              {t("about")}
             </a>
-            <p className="text-gray-400">
-              Desires to obtain pain of itself, because it is pain, but
-              occasionally circumstances.
-            </p>
+            <p className="text-gray-400">{t("description")}</p>
             <div className="flex gap-4">
               <a href="http://" target="_blank">
                 <FaInstagram className="text-white hover:text-red-600 hover:cursor-pointer" />
@@ -39,21 +38,21 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3 className="font-bold">Explore</h3>
+            <h3 className="font-bold">{t("explore")}</h3>
             <div className="lg:w-[200px] h-[1px] bg-gray-300">
               <div className="lg:w-[70px] h-[2px] bg-red-600"></div>
             </div>
             <a href="/about" className="text-gray-400 hover:underline">
-              About the Company
+              {t("link1")}
             </a>
             <a href="#" className="text-gray-400 hover:underline">
-              Meet the Team
+              {t("link2")}
             </a>
             <a href="#" className="text-gray-400 hover:underline">
-              News & Media
+              {t("link3")}
             </a>
             <a href="#" className="text-gray-400 hover:underline">
-              Our Projects
+              {t("link4")}
             </a>
             <a href="/contact" className="text-gray-400 hover:underline">
               Contact
@@ -88,7 +87,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3 className="font-bold">Gallery</h3>
+            <h3 className="font-bold">{t("gallery")}</h3>
             <div className="lg:w-[200px] h-[1px] bg-gray-300">
               <div className="lg:w-[70px] h-[2px] bg-red-600"></div>
             </div>
@@ -100,7 +99,7 @@ const Footer = () => {
             Electrica
           </span>
           <div className="w-[1px] h-8px bg-slate-400"></div>
-          <p>All Rights Reserved</p>
+          <p>{t("right")}</p>
           <div className="w-[1px] h-8px bg-slate-400"></div>
           <span className="text-red-600 font-bold">CHRIMK34</span>
         </footer>

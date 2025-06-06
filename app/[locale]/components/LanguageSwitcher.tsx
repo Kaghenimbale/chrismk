@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
   return (
     <div className="relative text-red-600 top-20 right-8">
       <select
-        className="text-blue-950 w-[45px] h-[30px] rounded-md absolute"
+        className="text-blue-950 bg-gray-300 outline-none w-[45px] h-[30px] rounded-md absolute"
         name=""
         id=""
         value={choice}
