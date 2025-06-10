@@ -76,7 +76,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 lg:h-[30rem] justify-center">
+      <div className="flex flex-col gap-10 lg:h-[30rem] h-auto justify-center">
         <h2 className="text-4xl font-bold flex gap-2 justify-center">
           {t("service")}
         </h2>
