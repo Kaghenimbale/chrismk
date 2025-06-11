@@ -6,6 +6,7 @@ import { IoMdCloseCircle } from "react-icons/io";
 import { SiThunderstore } from "react-icons/si";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
@@ -18,10 +19,10 @@ const Navbar = () => {
     <nav className="flex justify-center bg-slate-900 text-white py-4 px-8 top-0 left-0 right-0 fixed z-10">
       <div className="flex justify-between w-full lg:w-[80vw] items-center">
         <h1 className="flex font-extrabold text-4xl">
-          <a href="/" className="flex hover:no-underline gap-2 items-center">
+          <Link href="/" className="flex hover:no-underline gap-2 items-center">
             <SiThunderstore className="text-red-600" />
             Electrica
-          </a>
+          </Link>
         </h1>
         <ul
           className={`${
@@ -30,24 +31,24 @@ const Navbar = () => {
               : "hidden lg:flex gap-4"
           }`}
         >
-          <a
+          <Link
             href="/"
             className="font-bold lg:font-sans text-blue-950 lg:text-white"
           >
             {t("home")}
-          </a>
-          <a
+          </Link>
+          <Link
             href="/about"
             className="font-bold lg:font-sans text-blue-950 lg:text-white"
           >
             {t("about")}
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="font-bold lg:font-sans text-blue-950 lg:text-white"
           >
             {t("contact")}
-          </a>
+          </Link>
           <button
             className="flex items-center justify-center lg:hidden absolute top-10 right-10"
             onClick={handleOpen}

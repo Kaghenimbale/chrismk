@@ -14,8 +14,8 @@ const Page = () => {
     setOpen((prev) => !prev);
   };
 
-  const handleClose = (e: any) => {
-    if (e.target.id === "wrapper") {
+  const handleClose = (e: React.MouseEvent<HTMLDivElement>) => {
+    if ((e.target as HTMLElement).id === "wrapper") {
       setOpen((prev) => !prev);
     }
   };

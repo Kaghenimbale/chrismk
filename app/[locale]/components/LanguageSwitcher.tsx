@@ -1,5 +1,5 @@
 import { usePathname, useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React from "react";
 
 const LanguageSwitcher = () => {
   const pathname = usePathname();
