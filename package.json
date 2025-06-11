@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "i18next": "^24.2.3",
+    "next": "^13.4.10",
+    "next-i18next": "^15.4.2",
+    "next-intl": "^4.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.4.1",
     "react-icons": "^5.3.0"
   },
   "devDependencies": {
