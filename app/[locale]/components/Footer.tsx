@@ -93,13 +93,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <footer className="bg-slate-900 flex gap-2 justify-center lg:p-4">
+        <footer className="bg-slate-900 flex gap-2 justify-center lg:p-4 whitespace-nowrap">
           &copy; {date}
           <span className="text-red-600 font-bold hidden md:block">
             Electrica
           </span>
           <div className="w-[1px] h-8px bg-slate-400"></div>
-          <p>{t("right")}</p>
+          <p className="lg:text-xl whitespace-nowrap">{t("right")}</p>
           <div className="w-[1px] h-8px bg-slate-400"></div>
           <span className="text-red-600 font-bold">CHRIMK34</span>
         </footer>

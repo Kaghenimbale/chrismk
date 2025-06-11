@@ -5,9 +5,28 @@ import { BiMenu } from "react-icons/bi";
 import { IoMdCloseCircle } from "react-icons/io";
 import { SiThunderstore } from "react-icons/si";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const Navbar = () => {
-  const navbars = ["Home", "About", "Contact"];
+  const t = useTranslations("navbar");
+  const navbars = [
+    {
+      id: 1,
+      title: "Home",
+      title1: "Accueil",
+    },
+    {
+      id: 2,
+      title: "About",
+      title1: "Accueil",
+    },
+    {
+      id: 3,
+      title: "Contact",
+      title1: "Accueil",
+    },
+  ];
   const [isOpen, setOpen] = useState<boolean>(false);
 
   const handleOpen = () => {
@@ -29,21 +48,24 @@ const Navbar = () => {
               : "hidden lg:flex gap-4"
           }`}
         >
-          {navbars.map((navbar) => {
-            return (
-              <a
-                href={`/${
-                  navbar.toLocaleLowerCase() === "home"
-                    ? ""
-                    : navbar.toLocaleLowerCase()
-                }`}
-                key={navbar}
-                className="font-bold lg:font-sans text-blue-950 lg:text-white"
-              >
-                {navbar.toLocaleUpperCase()}
-              </a>
-            );
-          })}
+          <a
+            href="/"
+            className="font-bold lg:font-sans text-blue-950 lg:text-white"
+          >
+            {t("home")}
+          </a>
+          <a
+            href="/about"
+            className="font-bold lg:font-sans text-blue-950 lg:text-white"
+          >
+            {t("about")}
+          </a>
+          <a
+            href="/contact"
+            className="font-bold lg:font-sans text-blue-950 lg:text-white"
+          >
+            {t("contact")}
+          </a>
           <button
             className="flex items-center justify-center lg:hidden absolute top-10 right-10"
             onClick={handleOpen}

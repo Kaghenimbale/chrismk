@@ -1,4 +1,9 @@
 {
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "contact": "Contact"
+  },
   "HomeComponents": {
     "about": {
       "title": {
