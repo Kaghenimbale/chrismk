@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../../../public/1_Ntcxw4Uyx5m8SaJmS0OJrg.jpg";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const About = () => {
   const t = useTranslations("HomeComponents.about");
@@ -14,12 +14,12 @@ const About = () => {
         <h1 className="text-4xl lg:text-6xl font-extrabold lg:w-[50rem]">
           {t("description")}
         </h1>
-        <a
+        <Link
           href="/contact"
           className="bg-white text-slate-900 p-3 rounded-md transition-all delay-100 hover:bg-slate-900 hover:text-white hover:no-underline"
         >
           {t("contactBtn")}
-        </a>
+        </Link>
       </div>
     </div>
   );

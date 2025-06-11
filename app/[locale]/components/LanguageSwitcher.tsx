@@ -2,7 +2,6 @@ import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const LanguageSwitcher = () => {
-  const [choice, setChoice] = useState("");
   const pathname = usePathname();
   const router = useRouter();
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -13,16 +12,13 @@ const LanguageSwitcher = () => {
     const newPath = segments.join("/");
     router.replace(newPath);
   };
-  console.log(choice);
-  console.log(pathname);
-  console.log(router);
   return (
     <div className="relative text-red-600 top-20 right-8">
       <select
         className="text-blue-950 bg-gray-300 outline-none w-[45px] h-[30px] rounded-md absolute"
         name=""
         id=""
-        value={choice}
+        value="🌐"
         onChange={handleChange}
       >
         <option value="">🌐</option>

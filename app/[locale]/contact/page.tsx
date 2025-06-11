@@ -4,11 +4,10 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoIosCall, IoMdCloseCircle } from "react-icons/io";
 import { FaAngleRight } from "react-icons/fa";
-import Contact from "../components/Contact";
 import Form from "../components/Form";
 import { useTranslations } from "next-intl";
 
-const page = () => {
+const Page = () => {
   const t = useTranslations("ContactComponent");
   const [isOpen, setOpen] = useState(false);
   const handleClick = () => {
@@ -90,4 +89,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

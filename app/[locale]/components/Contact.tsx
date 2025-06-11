@@ -7,7 +7,7 @@ import Form from "./Form";
 import { useTranslations } from "next-intl";
 
 const Contact = () => {
-  const [isOpen, setOpen] = useState<Number[]>([]);
+  const [isOpen, setOpen] = useState<number[]>([]);
   const t = useTranslations("HomeComponents.contact");
   const capabilities = t.raw("capabilities") as {
     id: number;

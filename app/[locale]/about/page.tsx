@@ -1,17 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaCheckCircle, FaRegLightbulb } from "react-icons/fa";
 import coffret from "../../../public/coffret.jpg";
 import imageLight from "../../../public/Gen-AI-Enterprise-Futurist-Speaker.jpg";
 import { FaComputer } from "react-icons/fa6";
 import { TbNetwork, TbShoppingCartBolt } from "react-icons/tb";
-import { BsThreeDots } from "react-icons/bs";
-import { title } from "process";
 import { useTranslations } from "next-intl";
 
-const page = () => {
+const Page = () => {
   const t = useTranslations("AboutComponent");
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
@@ -142,4 +140,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

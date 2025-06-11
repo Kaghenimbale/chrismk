@@ -6,27 +6,9 @@ import { IoMdCloseCircle } from "react-icons/io";
 import { SiThunderstore } from "react-icons/si";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
-  const navbars = [
-    {
-      id: 1,
-      title: "Home",
-      title1: "Accueil",
-    },
-    {
-      id: 2,
-      title: "About",
-      title1: "Accueil",
-    },
-    {
-      id: 3,
-      title: "Contact",
-      title1: "Accueil",
-    },
-  ];
   const [isOpen, setOpen] = useState<boolean>(false);
 
   const handleOpen = () => {
